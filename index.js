@@ -28,6 +28,7 @@ async function run() {
 
     // data creat
     const spotCollection = client.db('spotDB').collection('spot');
+    // user craet
     const userCollection = client.db('spotDB').collection('user');
 
 
