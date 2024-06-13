@@ -38,7 +38,7 @@ async function run() {
         res.send(result);
     })
 
-    // get single data (in viewDetails)
+    //for get single data (in viewDetails)
     app.get('/spots/:id',async(req,res)=>{
       const id= req.params.id;
       const query={_id: new ObjectId(id)}
