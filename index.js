@@ -26,7 +26,7 @@ async function run() {
     // Connect the client to the server	(optional starting in v4.7)
     // await client.connect();
 
-    // data creat
+    // database creat
     const spotCollection = client.db('spotDB').collection('spot');
     // user craet
     const userCollection = client.db('spotDB').collection('user');
@@ -46,7 +46,7 @@ async function run() {
         res.send(result);
     })
 
-    //for update 
+    //this is for update 
     app.put('/spots/:id',async(req,res)=>{
       const id= req.params.id;
       const filter={_id: new ObjectId(id)}
