@@ -26,6 +26,7 @@ async function run() {
     // Connect the client to the server	(optional starting in v4.7)
     // await client.connect();
 
+    // data creat
     const spotCollection = client.db('spotDB').collection('spot');
     const userCollection = client.db('spotDB').collection('user');
 
