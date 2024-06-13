@@ -46,7 +46,7 @@ async function run() {
         res.send(result);
     })
 
-    //this is for update 
+    //  for update 
     app.put('/spots/:id',async(req,res)=>{
       const id= req.params.id;
       const filter={_id: new ObjectId(id)}
