@@ -79,7 +79,7 @@ async function run() {
         res.send(result);
     })
 
-    // for delete
+    //this for delete
     app.delete('/spots/:id',async(req,res)=>{
       const id= req.params.id;
       const query={_id: new ObjectId(id)}
@@ -88,7 +88,7 @@ async function run() {
 
     })
 
-    // user related apis
+    //this for user related apis
     app.post('/user',async(req,res)=>{
       const user =req.body;
       console.log(user);
